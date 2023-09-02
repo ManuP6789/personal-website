@@ -1,0 +1,153 @@
+*, *,::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+.fsnav {
+    text-size-adjust: auto;
+    overflow: hidden;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    min-height: auto;
+    min-width: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.95);
+    transform: translateY(-100%);
+    transition: transform 1s; 
+}
+.fsnav--open {
+    transform: translateY(0%);
+    transition: transform 1s;
+} 
+.fsnav-top-bar {
+    height: 6.5rem;
+    display: flex;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(222, 222, 222);
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+    user-select: none; 
+}
+.fsnav-top-bar-left-section {
+    display: flex;
+    padding-left: 40px;
+    align-items: center;
+}
+.fsnav-name-logo{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+.fsnav-top-bar-right-section {
+    display: flex;
+    flex-basis: 0%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: flex-end;
+    line-height: 90px;
+    padding-left: 20px;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+.fsnav-close-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    color: white;
+    font-family: 'Spinnaker', sans-serif;
+}
+.fsnav-close{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.fsnav-close-button {
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    width: 1.75em;
+    height: 1.75em;
+    outline: none;
+    background: none;
+    border: solid;
+    border-color: rgba(255,255,255,0.35);
+    border-radius: 50%;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.fsnav-close-button:active,
+.fsnav-close-button:hover {
+    border-color: white;
+    -webkit-tap-highlight-color: transparent;
+}
+.fsnav-directory {
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.fsnav-directory-left {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    width: 20rem;
+    padding: 4rem 3rem 3rem 3rem;
+    float: left;
+    overflow-y: scroll;
+}
+.fsnav-directory-left-grid {
+    display: block;
+    flex-basis: 15%;
+    flex-shrink: 0;
+    padding-bottom: 3rem;
+}
+.fsnav-link::before {
+    content: "";
+    position: absolute;
+    left: 0; 
+    bottom: 0; 
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.25s ease-out;
+}
+.fsnav-link:hover::before {
+    width: 100%;
+}
+.fsnav-link {
+    display: inline-block;
+    position: relative;
+    text-decoration-line: none;
+    color: white;
+    font-family: 'Spinnaker', sans-serif;
+    font-size: 35px;
+    padding: 0;
+}
+.fsnav-directory-right {
+    display: flex;
+    width: 100%;
+}
+.fsnav-lower-menu {
+    color: white;
+    background-color: black;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6.5rem;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(222, 222, 222);
+}

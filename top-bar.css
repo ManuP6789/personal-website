@@ -31,35 +31,6 @@
    align-self: stretch;
    box-sizing: border-box;
 }
-.search-button {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   position: relative;
-   padding-left: 30px;
-   padding-right: 30px;
-   border-left-width: 1px;
-   border-left-style: solid;
-   border-left-color: rgb(222, 222, 222);
-   cursor: pointer;
-   transition: background-color 0.7s;
-}
-.search-button:hover {
-   background-color:  rgb(222, 222, 222);
-   transition: background-color 0.7s;
-}
-.search-icon {
-   height: 30px;
-   margin-right: 6px;
-   user-select: none;
-   -moz-user-select: none;
-   -webkit-user-drag: none;
-   -webkit-user-select: none;
-   -ms-user-select: none;
-}
-.search-text {
-   font-family: 'Spinnaker', sans-serif;
-}
 .menu-button {
    display: flex;
    align-items: center;
@@ -67,15 +38,17 @@
    position: relative;
    padding-left: 30px;
    padding-right: 30px;
-   border-left-width: 1px;
-   border-left-style: solid;
-   border-left-color: rgb(222, 222, 222);
    cursor: pointer;
-   transition: background-color 0.7s;
 }
 .menu-button:hover {
-   background-color:  rgb(222, 222, 222);
-   transition: background-color 0.7s;
+   .menu-text {
+      color: rgb(177, 177, 177);
+      transition: color 0.2s;
+   }
+   .menu-icon {
+      filter: invert(60%);
+      transition: filter 0.2s;
+   }
 }
 
 .menu-icon {
@@ -86,9 +59,11 @@
    -webkit-user-drag: none;
    -webkit-user-select: none;
    -ms-user-select: none;
+   transition: filter 0.2s;
 }
 .menu-text {
    font-family: 'Spinnaker', sans-serif;
+   transition: color 0.2s;
 }
 
 @media (max-width: 600px) {

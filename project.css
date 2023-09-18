@@ -1,0 +1,17 @@
+.projects {
+    height: 800px;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    row-gap: 40px;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 5rem 5rem 5rem;
+}
+.grid-image {
+    background-color: lightblue;
+}
+.grid-description {
+    background-color: lightpink;
+}

@@ -2,14 +2,15 @@
 <html>
   <head>
     <title>Personal Website</title>
-    <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="top-bar.css" />
-    <link rel="stylesheet" href="header/header.css" />
-    <link rel="stylesheet" href="directory/fsnav.css" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/top-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/header.css" />
+    <link rel="stylesheet" href="/stylesheets/fsnav.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="about-me.css" />
-    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="stylesheets/about-me.css" />
+    <link rel="stylesheet" href="stylesheets/project.css" />
+    <link rel="stylesheet" href="/stylesheets/contact.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family
       =Roboto:wght@400;500&family=Spinnaker&family=Tenor+Sans&display=swap"
@@ -37,13 +38,13 @@
       <div class="fsnav-directory">
         <div class="fsnav-directory-left">
           <div class="fsnav-directory-left-grid">
-            <a href="#" class="fsnav-link academics">About Me</a>
+            <a id="about-me" class="fsnav-link academics">About Me</a>
           </div>
           <div class="fsnav-directory-left-grid">
-            <a href="#" class="fsnav-link">Projects</a>
+            <a id="about-me" class="fsnav-link">Projects</a>
           </div>
           <div class="fsnav-directory-left-grid">
-            <a href="#" class="fsnav-link info">Contact Info</a>
+            <a id="" class="fsnav-link info">Contact Info</a>
           </div>
         </div>
         <div class="fsnav-directory-right"></div>
@@ -183,8 +184,13 @@
         </div>
       </div>
     </div>
-    <script src="./directory/fsnav.js"></script>
-    <script src="./header/header.js"></script>
-    <script src="./scroll-animation.js"></script>
+    <div class="contact">
+      <div class="contact-container">
+        <p>This is the contact info.</p>
+      </div>
+    </div>
+    <script src="/scripts/fsnav.js"></script>
+    <script src="/scripts/header.js"></script>
+    <script src="/scripts/scroll-animation.js"></script>
   </body>
 </html>

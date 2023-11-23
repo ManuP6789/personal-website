@@ -38,13 +38,13 @@
       <div class="fsnav-directory">
         <div class="fsnav-directory-left">
           <div class="fsnav-directory-left-grid">
-            <a id="about-me" class="fsnav-link academics">About Me</a>
+            <a href="#about-me" class="fsnav-link">About Me</a>
           </div>
           <div class="fsnav-directory-left-grid">
-            <a id="about-me" class="fsnav-link">Projects</a>
+            <a href="#project" class="fsnav-link">Projects</a>
           </div>
           <div class="fsnav-directory-left-grid">
-            <a id="" class="fsnav-link info">Contact Info</a>
+            <a href="#contact" class="fsnav-link">Contact Info</a>
           </div>
         </div>
         <div class="fsnav-directory-right"></div>
@@ -99,7 +99,7 @@
         </div>
       </div>
     </div>
-    <div class="about-me">
+    <div id="about-me" class="about-me">
       <div class="about-me-header hidden">
         <div class="about-me-header-container">
           <div class="about-me-header-text">About Me</div>
@@ -130,13 +130,39 @@
         </div>
       </div>
     </div>
-    <div class="projects">
+    <div id="project" class="projects">
       <div class="projects-header hidden">
         <div class="projects-header-container">
           <div class="projects-header-text">Projects</div>
         </div>
       </div>
       <div class="projects-grid">
+        <div class="grid-image hidden">
+          <img
+            class="project-image"
+            src="images/Screen Shot 2023-09-20 at 9.47.16 AM.png"
+            alt="Error"
+          />
+        </div>
+        <div class="grid-description hidden">
+          <h3 class="project-title">Personal Portfolio Website</h3>
+          <ul class="tech-list">
+            <p class="tech-text">Made with:</p>
+            <li class="tech-list-element">
+              <img src="images/icons/icons8-html-48.png" alt="Error" />
+            </li>
+            <li class="tech-list-element">
+              <img src="images/icons/icons8-css-48.png" alt="Error" />
+            </li>
+            <li class="tech-list-element">
+              <img src="images/icons/icons8-javascript-48.png" alt="Error" />
+            </li>
+          </ul>
+          <p class="project-description-text">
+            This is my personal portofolio website which I made using HTML, CSS,
+            and JavaScript. I taught myself how to use these languages.
+          </p>
+        </div>
         <div class="grid-image hidden">
           <img
             class="project-image"
@@ -184,7 +210,7 @@
         </div>
       </div>
     </div>
-    <div class="contact">
+    <div id="contact" class="contact">
       <div class="contact-container">
         <p>This is the contact info.</p>
       </div>

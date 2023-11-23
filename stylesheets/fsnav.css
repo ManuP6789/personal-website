@@ -16,11 +16,11 @@
     height: 100%;
     background-color: rgba(0,0,0,0.95);
     transform: translateY(-100%);
-    transition: transform 1s; 
+    transition: transform 0.5s; 
 }
 .fsnav--open {
     transform: translateY(0%);
-    transition: transform 1s;
+    transition: transform 0.5s;
 } 
 .fsnav-top-bar {
     height: 6.5rem;

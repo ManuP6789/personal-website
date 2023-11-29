@@ -1,8 +1,16 @@
 .contact {
     height: 700px;
-    background-color: white;
+    object-fit: cover;
+    background-color: black;
     font-family: 'Spinnaker', sans-serif;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1300px;
+    color: white;
+    /* max-width: 1300px;        */
+}
+.contact-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }

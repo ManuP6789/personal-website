@@ -20,9 +20,10 @@
 }
 .project-image {
     object-fit: cover;
-    width: 100%;
     border: 2px solid black;
     border-radius: 2%;
+    height: 400px;
+    width: 400px;
 }
 .grid-description {
     display: flex;
@@ -47,4 +48,20 @@
 }
 .tech-list-element {
     padding-left: 10px;
+}
+
+@media (max-width: 622px) {
+    .projects-grid {
+        display: block;
+    }
+    .grid-image {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .project-image {
+        height: 450px;
+    }
+    .grid-description {
+        padding-bottom: 40px;
+    }
 }

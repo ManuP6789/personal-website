@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
       fsNav.classList.remove('fsnav--open');
       bodyElement.classList.remove('stop-scrolling');
 
-    //   // Scroll to the target section
+      // Scroll to the target section
       const targetId = this.getAttribute('href').substring(1);
       const targetSection = document.getElementById(targetId);
       

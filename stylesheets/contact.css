@@ -6,11 +6,37 @@
     margin-left: auto;
     margin-right: auto;
     color: white;
+    display: flex; /* Add this to make .contact a flex container */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
     /* max-width: 1300px;        */
 }
 .contact-container {
     display: flex;
-    align-items: center;
-    align-content: center;
+    height: 50%;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    width: 50%;
+}
+.contact-title {
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 50px;
+}
+.contact-me {
+    display: flex;
+    padding-top: 100px;
+    flex-direction: row; /* Set flex-direction to row */
+    justify-content: center; /* Center the content horizontally */
+}
+.contact-box {
+    height: 70px;
+    padding-right: 40px;
+    padding-left: 40px;
 }

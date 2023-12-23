@@ -7,23 +7,27 @@
 }
 .projects-grid {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: 0.8fr 0.8fr;
     row-gap: 80px;
-    column-gap: 40px;
+    column-gap: 100px;
     width: 100%;
+    max-width: 1000px;
     height: 100%;
     padding: 5rem 5rem 5rem 5rem;
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto;
 }
 .grid-image {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .project-image {
     object-fit: cover;
     border: 2px solid black;
     border-radius: 2%;
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
 }
 .grid-description {
     display: flex;
@@ -59,9 +63,15 @@
         padding-top: 30px;
     }
     .project-image {
-        height: 450px;
+        height: 350px;
     }
     .grid-description {
         padding-bottom: 40px;
+    }
+}
+@media (max-width: 890px) {
+    .tech-list img {
+        max-width: 24px; /* Adjust the size as needed */
+        max-height: 24px; /* Adjust the size as needed */
     }
 }

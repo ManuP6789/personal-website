@@ -174,7 +174,7 @@
     margin: auto;
     width: 1px;
     height: 280px;
-    background-color: transparent;
+    background-color: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
 }
 .bottom-line {
     position: absolute;
@@ -213,6 +213,7 @@
     overflow-y: clip;
     overflow-x: clip;
     z-index: -3;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
 }
 
 @media (max-width: 533px) {

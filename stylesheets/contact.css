@@ -68,7 +68,7 @@
 }
 .colorBox:hover {
     background: #87cefa;
-    transition-duration: 0s;
+    transition-duration: 1s;
 }
 .contact-img {
     transition: transform 0.2s ease;
@@ -76,4 +76,27 @@
 .contact-img:hover {
     cursor: pointer;
     transform: translateY(-7px);
+}
+
+@media (max-width: 750px) {
+    .contact-title {
+        font-size: 40px;
+    }
+    .contact-me {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    .contact-box {
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-title {
+        font-size: 30px;
+    }
+    .contact-images {
+        max-width: 40px;
+        max-height: 40px;
+    }
 }

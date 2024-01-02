@@ -17,3 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })
 })
+
+document.getElementById('logo-img').addEventListener('click', function() {
+    window.location.href = 'https://manuelpenam.com/';})

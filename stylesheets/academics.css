@@ -1,0 +1,225 @@
+.academics {
+    height: 800px;
+    background-color: white;
+    font-family: 'Spinnaker', sans-serif;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+}
+.academics-container {
+    display: flex;
+    width: 70%; 
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cw-container,
+.ec-container,
+.ug-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Add flex property to make them flexible */
+    margin: 0 20px; /* Optional margin between the containers */
+    background-color: black;
+    height: 100%;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    background-color: white;
+    box-shadow: 10px 10px rgb(0, 145, 255), 12px 12px black;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.cw-container:hover,
+.ec-container:hover,
+.ug-container:hover {
+    box-shadow: 0px 0px rgb(0, 145, 255), 0px 0px black; /* Adjusted shadow on hover */
+}
+.ug-title-container {
+    padding: 1.3em;
+}
+.ug-title {
+    font-size: 1.3em;
+    width: 100%;
+    height: 100%;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-radius: 2%;
+}
+.display-container {
+    height: 500px;
+    width: 70%;
+    padding-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.display-content {
+    height: 100%;
+    background-color: white;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+}
+.hide {
+    display: none;
+}
+.outline-back {
+    position: absolute;
+    background-color: black;
+    margin: auto;
+    top: 28.75%;
+    z-index: -2;
+    height: 51px;
+    width: 2px;
+    align-items: center;
+}
+.outline-back-ec {
+    right: 50%;
+    height: 75px;
+}
+.outline-back-ug {
+    right: 25%;
+}
+.outline-back-cw {
+    right: 75%;
+}
+.outline-back-cross {
+    position: absolute;
+    display: flex;
+    background: black;
+    margin: -2;
+    right: 25%;
+    top: 35%;
+    z-index: -2;
+    height: 5px;
+    width: 50.3%;
+    border-radius: 5%;
+}
+.outline-back-cross::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: linear-gradient(to bottom, #00ccff, #0066ff);
+    transform-origin: left;
+    /* animation: lightsaberGlow 2s infinite; */
+}
+.outline-back-cross::after {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    width: 20px;
+    height: 20px;
+    background: rgb(7, 220, 220); /* Adjust the alpha value for the glow intensity */
+    border-radius: 50%;
+    /* animation: animateDot 2s linear infinite; */
+}
+
+@keyframes lightsaberGlow {
+    0%, 20% {
+        transform: scaleX(0);
+        box-shadow: 0 0 0 4px #00ccff84,
+        0 0 0 5px #00ccff98,
+        0 0 10px #00ccff,
+        0 0 20px 10px #00ccff;
+    }
+    100% {
+        transform: scaleX(1);
+        transform-origin: left;
+        box-shadow: 0 0 0 4px #00ccff84,
+        0 0 0 5px #00ccff98,
+        0 0 10px #00ccff,
+        0 0 20px 10px #00ccff;
+    }
+}
+
+@keyframes animateDot {
+    0%
+    {
+        transform: translateY(-50%) scale(0) translateX(0);
+    }
+    5%
+    {
+        transform: translateY(-50%) scale(1);
+    }
+    20% 
+    {
+        transform: translateY(-50%) scale(1);
+        box-shadow: 0 0 0 4px #0bec7c22,
+        0 0 0 10px #0bec7c22,
+        0 0 20px #0bec7c,
+        0 0 60px 10px #0bec7c;
+    }
+    40%
+    {
+        transform: translateY(-50%) scale(1);
+    }
+    80%
+    {
+        transform: translateY(-50%) scale(1);
+        box-shadow: 0 0 0 4px #0bec7c22,
+        0 0 0 10px #0bec7c22,
+        0 0 20px #0bec7c,
+        0 0 60px 10px #0bec7c,
+        0 0 100px 20px #0bec7c;
+    }
+    95%
+    {
+        transform: translateY(-50%) scale(1);
+    }
+    100%
+    {
+        transform: translateY(-50%) scale(1) translateX(100%);
+    }
+
+}
+.outline-back,
+.outline-back-ec,
+.outline-back-ug,
+.outline-back-cw,
+.outline-back-cross {
+    animation: lightPulse 1s infinite; /* Adjust the duration and iteration as needed */
+}
+#ug-display-card {
+    background-color: #ffffffeb;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    box-shadow: 0 0 5px black;
+    border-radius: 5px;
+    height: 95%;
+    align-items: center;
+    justify-content: center;
+}
+#ec-display-card {
+    background-color: #ffffffeb;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    box-shadow: 0 0 5px black;
+    border-radius: 5px;
+    /* height: 95%; */
+}
+
+/* Style for the university name */
+#ug-display h3 {
+    color: #333;
+    padding-bottom: 20px;
+}
+
+/* Style for the graduation year and major */
+#ug-display p {
+    margin: 5px 0;
+}
+
+/* Style for labels (bold) */
+#ug-display b {
+    color: rgb(0, 108, 209);
+}

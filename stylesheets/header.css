@@ -172,8 +172,9 @@
 .header-bottom {
     align-items: center;
     margin: auto;
-    width: 1px;
+    width: 4px;
     height: 280px;
+    z-index: 100;
     background-color: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
 }
 .bottom-line {
@@ -182,7 +183,7 @@
     left: 0;
     right: 0;
     z-index: -2;
-    width: 1px;
+    width: 2px;
     height: 230px;
     background-color: transparent;
 }

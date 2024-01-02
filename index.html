@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="/stylesheets/fsnav.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="stylesheets/about-me.css" />
-    <link rel="stylesheet" href="stylesheets/project.css" />
+    <link rel="stylesheet" href="/stylesheets/about-me.css" />
+    <link rel="stylesheet" href="/stylesheets/project.css" />
     <link rel="stylesheet" href="/stylesheets/contact.css" />
+    <link rel="stylesheet" href="/stylesheets/academics.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family
       =Roboto:wght@400;500&family=Spinnaker&family=Tenor+Sans&display=swap"
@@ -26,7 +27,7 @@
     <div class="fsnav">
       <div class="fsnav-top-bar">
         <div class="fsnav-top-bar-left-section">
-          <div class="fsnav-name-logo">MP</div>
+          <div id="logo-img" class="fsnav-name-logo">MP</div>
         </div>
         <div class="fsnav-top-bar-right-section">
           <div class="fsnav-close-text">Close</div>
@@ -44,6 +45,9 @@
             <a href="#project" class="fsnav-link">Projects</a>
           </div>
           <div class="fsnav-directory-left-grid">
+            <a href="#academics" class="fsnav-link">Academics</a>
+          </div>
+          <div class="fsnav-directory-left-grid">
             <a href="#contact" class="fsnav-link">Contact Info</a>
           </div>
         </div>
@@ -53,7 +57,7 @@
     </div>
     <div class="top-bar">
       <div class="left-section">
-        <div class="name-logo">MP</div>
+        <div id="logo-img" class="name-logo">MP</div>
       </div>
       <div class="right-section">
         <div class="menu-button">
@@ -113,10 +117,14 @@
             <div class="about-me-description">
               I am a sophomore, computer science student in the School of
               Engineering at
-              <a class="tufts-link" href="https://www.tufts.edu/"
+              <a
+                id="tufts-link"
+                class="tufts-link"
+                href="https://www.tufts.edu/"
                 >Tufts University</a
               >.
             </div>
+            <div class="about-left-section-overlay"></div>
           </div>
           <div class="about-right-section">
             <div class="about-image-container">
@@ -137,12 +145,13 @@
         </div>
       </div>
       <div class="projects-grid">
-        <div class="grid-image hidden">
+        <div id="freebites-img" class="grid-image hidden">
           <img
             class="project-image"
             src="images/freebites_homepage.png"
             alt="Error"
           />
+          <div class="overlay"></div>
         </div>
         <div class="grid-description hidden">
           <h3 class="project-title">Freebites</h3>
@@ -168,12 +177,39 @@
             ReactNative, and MongoDB for the back-end.
           </p>
         </div>
-        <div class="grid-image hidden">
+        <div id="face-design-img" class="grid-image hidden">
+          <img class="project-image" src="images/face-design.png" alt="Error" />
+          <div class="overlay"></div>
+        </div>
+        <div class="grid-description hidden">
+          <h3 class="project-title">Face Design</h3>
+          <ul class="tech-list">
+            <p class="tech-text">Made with:</p>
+            <li class="tech-list-element">
+              <img src="images/icons/icons8-google-colab-48.png" alt="Error" />
+            </li>
+            <li class="tech-list-element">
+              <img src="images/icons/icons8-python-48 (1).png" alt="Error" />
+            </li>
+          </ul>
+          <p class="project-description-text">
+            Team Coordinator for the Face Design Project in the Tufts Human
+            Factors Idea Lab. The Face Design project uses the Nvidia SyleGAN
+            Face Generator to identify a face that you want to display. It
+            displays an array of nine faces and iterate through the faces that
+            looks most familiar until you get the face you want. My role as team
+            coordinator was to delegate tasks, run team meetings, and setting
+            goals.
+          </p>
+        </div>
+
+        <div id="personal-website-img" class="grid-image hidden">
           <img
             class="project-image"
             src="images/Screen Shot 2023-09-20 at 9.47.16 AM.png"
             alt="Error"
           />
+          <div class="overlay"></div>
         </div>
         <div class="grid-description hidden">
           <h3 class="project-title">Personal Portfolio Website</h3>
@@ -190,8 +226,8 @@
             </li>
           </ul>
           <p class="project-description-text">
-            This is my personal portofolio website which I made using HTML, CSS,
-            and JavaScript. I taught myself how to use these languages.
+            This is my personal portfolio website which I made using HTML, CSS,
+            and JavaScript.
           </p>
         </div>
         <div class="grid-image hidden">
@@ -200,6 +236,7 @@
             src="images/Screen Shot 2023-09-20 at 10.59.31 AM.png"
             alt="Error"
           />
+          <div class="overlay"></div>
         </div>
         <div class="grid-description hidden">
           <h3 class="project-title">Splendor Game</h3>
@@ -213,6 +250,70 @@
             This is the recreation of the board game splendor.
           </p>
         </div>
+      </div>
+    </div>
+    <div id="academics" class="academics">
+      <div class="about-me-header hidden">
+        <div class="about-me-header-container">
+          <div class="about-me-header-text">Academics</div>
+        </div>
+      </div>
+      <div class="academics-container">
+        <div onclick="showContainer('ug-display')" class="ug-container">
+          <div class="ug-title-container">
+            <div class="ug-title">Undergrad</div>
+          </div>
+        </div>
+        <div onclick="showContainer('ec-display')" class="ec-container">
+          <div class="ug-title-container">
+            <div class="ug-title">Extracurricular</div>
+          </div>
+        </div>
+        <div onclick="showContainer('cw-display')" class="cw-container">
+          <div class="ug-title-container">
+            <div class="ug-title">Coursework</div>
+          </div>
+        </div>
+      </div>
+      <div class="outline-back-ec outline-back"></div>
+      <div class="outline-back-ug outline-back"></div>
+      <div class="outline-back-cw outline-back"></div>
+      <div class="outline-back-cross"></div>
+      <div class="display-container">
+        <div id="ug-display" class="display-content">
+          <div id="ug-display-card">
+            <h1>Tufts University</h1>
+            <h3>Medford, MA</h3>
+            <p><b>Graduation year: </b>2026</p>
+            <p><b>Major:</b> Computer Science</p>
+            <p><b>GPA: </b> 3.82</p>
+            <p>Dean's List 3 semesters</p>
+          </div>
+        </div>
+        <div id="ec-display" class="display-content hide">
+          <div id="ec-display-card">
+            <h1>S.O.L.E.S.</h1>
+            <h4>Society of Latin Engineers and Scientists</h4>
+            <p>This is</p>
+          </div>
+          <div id="ec-display-card">
+            <h1>Rocket League Esports</h1>
+            <h4>Tufts Gaming Hub</h4>
+          </div>
+          <div id="ec-display-card">
+            <h1>ACL Munchers</h1>
+            <h4>Intermural Soccer</h4>
+          </div>
+          <div id="ec-display-card">
+            <h1>MCC</h1>
+            <h4>Mexican Culture Club</h4>
+          </div>
+          <div id="ec-display-card">
+            <h1>FreeBites</h1>
+            <h4>Mobile Development Team</h4>
+          </div>
+        </div>
+        <div id="cw-display" class="display-content hide"></div>
       </div>
     </div>
     <div id="contact" class="contact">
@@ -260,5 +361,8 @@
     <script src="/scripts/scroll-animation.js"></script>
     <script src="/scripts/contact-background.js"></script>
     <script src="/scripts/email.js"></script>
+    <script src="/scripts/project-images.js"></script>
+    <script src="/scripts/academics.js"></script>
+    <script src="/scripts/about-me.js"></script>
   </body>
 </html>

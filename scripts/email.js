@@ -18,3 +18,6 @@ document.getElementById('linkedIn-image').addEventListener('click', function() {
 
 document.getElementById('GitHub-image').addEventListener('click', function() {
     window.location.href = 'https://github.com/ManuP6789';})
+
+
+

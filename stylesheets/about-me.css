@@ -58,7 +58,7 @@
     border-radius: 2%;
     border-width: 2px;
 }
-.about-left-section::after {
+.about-left-section-overlay {
     content: "";
     position: absolute;
     align-items: center;
@@ -71,6 +71,12 @@
     border-style: solid;
     border-radius: 2%;
     border-width: 2px;
+    transition: transform 0.5s ease;
+    transform: translate(0, 0);
+}
+.about-left-section-overlay .overlay-transition {
+    transform: translate(-5%, -10%);
+    background-color: black;
 }
 .about-me-my-name {
     padding-top: 4rem;

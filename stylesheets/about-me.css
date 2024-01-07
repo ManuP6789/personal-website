@@ -1,6 +1,7 @@
 .about-me {
     height: 700px;
-    background-color: white;
+    background-color: radial-gradient(rgb(0, 0, 0, 0.6), white);;
+
     font-family: 'Spinnaker', sans-serif;
     position: relative;
     margin-left: auto;

@@ -1,13 +1,13 @@
 .contact {
-    height: 400px;
-    background-color: black;
+    height: 770px;
+    background-color: rgb(2, 32, 50);
     font-family: 'Spinnaker', sans-serif;
     color: white; /* Add this to make .contact a flex container */
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
 }
 .contactBackground {
-    background-color: black;
+    background-color: rgba(242, 226, 226, 0.046);
     font-family: 'Spinnaker', sans-serif;
     color: white; /* Add this to make .contact a flex container */
     justify-content: center; /* Center the content horizontally */
@@ -33,7 +33,7 @@
     border-width: 2px;
     border-radius: 20px;
     border-style: solid;
-    background-color: transparent;
+    background-color: black;
     width: 50%;
     top: 25%;
     left: 25%;
@@ -58,6 +58,7 @@
 }
 .colorBox {
     width: 100%;
+    border-radius: 5px;
     height: 36.5px;
     z-index: 2;
     filter: brightness(1.1);

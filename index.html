@@ -17,6 +17,16 @@
       =Roboto:wght@400;500&family=Spinnaker&family=Tenor+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
     <meta
       name="viewport"
@@ -258,7 +268,7 @@
           <div class="about-me-header-text">Academics</div>
         </div>
       </div>
-      <div class="academics-container">
+      <div class="academics-container hidden">
         <div onclick="showContainer('ug-display')" class="ug-container">
           <div class="ug-title-container">
             <div class="ug-title">Undergrad</div>
@@ -279,38 +289,89 @@
       <div class="outline-back-ug outline-back"></div>
       <div class="outline-back-cw outline-back"></div>
       <div class="outline-back-cross"></div>
-      <div class="display-container">
+      <div class="display-container hidden">
         <div id="ug-display" class="display-content">
-          <div id="ug-display-card">
-            <h1>Tufts University</h1>
-            <h3>Medford, MA</h3>
-            <p><b>Graduation year: </b>2026</p>
-            <p><b>Major:</b> Computer Science</p>
-            <p><b>GPA: </b> 3.82</p>
-            <p>Dean's List 3 semesters</p>
+          <div class="ug-card-container">
+            <div id="ug-display-card">
+              <h1>Tufts University</h1>
+              <h3>Medford, MA</h3>
+              <p><b>Graduation year: </b>2026</p>
+              <p><b>Major:</b> Computer Science</p>
+              <p><b>GPA: </b> 3.82</p>
+              <p>Dean's List 3 semesters</p>
+            </div>
+            <div id="ug-display-card">
+              <img class="ug-img" src="/images/IMG_9487 (1).png" alt="Error" />
+              <img class="ug-img" src="/images/tufts.png" alt="Error" />
+            </div>
           </div>
         </div>
         <div id="ec-display" class="display-content hide">
-          <div id="ec-display-card">
-            <h1>S.O.L.E.S.</h1>
-            <h4>Society of Latin Engineers and Scientists</h4>
-            <p>This is</p>
-          </div>
-          <div id="ec-display-card">
-            <h1>Rocket League Esports</h1>
-            <h4>Tufts Gaming Hub</h4>
-          </div>
-          <div id="ec-display-card">
-            <h1>ACL Munchers</h1>
-            <h4>Intermural Soccer</h4>
-          </div>
-          <div id="ec-display-card">
-            <h1>MCC</h1>
-            <h4>Mexican Culture Club</h4>
-          </div>
-          <div id="ec-display-card">
-            <h1>FreeBites</h1>
-            <h4>Mobile Development Team</h4>
+          <div id="ec-carousel">
+            <div class="ec-carousel-item">
+              <div class="ec-display-card">
+                <h1>S.O.L.E.S.</h1>
+                <h4>Society of Latin Engineers and Scientists</h4>
+                <p>
+                  Member of Tufts Society of Latinx Engineers and Scientists
+                  (S.O.L.E.S.) which seeks to help its members achieve academic
+                  success, create networking and provide resources for
+                  professional development.
+                </p>
+                <img src="/images/soles-logo.png" alt="Error" />
+              </div>
+              <div class="ec-display-card">
+                <h1>Rocket League Esports</h1>
+                <h4>Tufts Gaming Hub</h4>
+                <p>
+                  Took part in the Tufts B Team for Rocket League and competed
+                  two semesters in the NACE Starleague.
+                </p>
+                <img src="/images/tufts-gaminghub.png" alt="" />
+              </div>
+            </div>
+            <div class="ec-carousel-item">
+              <div class="ec-display-card">
+                <h1>ACL Munchers</h1>
+                <h4>Intermural Soccer</h4>
+                <p>
+                  Competed two semesters in the Tufts Intermural Soccer
+                  Competitive tournament and lost final twice. We will get them
+                  the third!
+                </p>
+                <img
+                  src="/images/IMG_8277 (1).png"
+                  alt="Error"
+                  style="max-width: 70%"
+                />
+              </div>
+              <div class="ec-display-card">
+                <h1>MCC</h1>
+                <h4>Mexican Culture Club</h4>
+                <p>
+                  Member of Tufts culture club that connects students through
+                  mexican culture and allows students from other culture to
+                  embrace mexican culture!
+                </p>
+                <img
+                  src="/images/mcc-logo.png"
+                  alt="Error"
+                  style="border-radius: 70%"
+                />
+              </div>
+            </div>
+            <div class="ec-carousel-item">
+              <div class="ec-display-card" style="width: 50%">
+                <h1>FreeBites</h1>
+                <h4>Mobile Development Team</h4>
+                <p>
+                  FullStack mobile app developer for this project where I am
+                  collaborating with nine other members incuding developers,
+                  designers, and tech/product managers!
+                </p>
+                <img src="/images/freebites_logo.png" alt="Error" />
+              </div>
+            </div>
           </div>
         </div>
         <div id="cw-display" class="display-content hide"></div>
@@ -364,5 +425,11 @@
     <script src="/scripts/project-images.js"></script>
     <script src="/scripts/academics.js"></script>
     <script src="/scripts/about-me.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="/scripts/slick-carousel.js"></script>
   </body>
 </html>

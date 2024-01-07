@@ -1,6 +1,6 @@
 .academics {
     height: 800px;
-    background-color: white;
+    background: white;
     font-family: 'Spinnaker', sans-serif;
     position: relative;
     margin-left: auto;
@@ -49,7 +49,7 @@
     border-radius: 2%;
 }
 .display-container {
-    height: 500px;
+    height: 530px;
     width: 70%;
     padding-top: 75px;
     margin-left: auto;
@@ -63,9 +63,156 @@
     border-radius: 5px;
     border-width: 2px;
     border-style: solid;
+    display: flex;
 }
 .hide {
     display: none;
+}
+.ug-card-container {
+    display: flex; /* Use flexbox to arrange elements side by side */
+    justify-content: space-between; /* Adjust this based on your layout preference */
+    align-items: center; /* Align items vertically in the center */
+    height: auto;
+    padding: 1em;
+}
+#ug-display-card {
+    background-color: #ffffffeb;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 5px black;
+    border-radius: 5px;
+    width: 100%;
+    /* flex: 1; */
+    height: 100%;
+    box-sizing: border-box;
+}
+.ec-display-card {
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 5px black;
+    border-radius: 5px;
+    width: 50%; 
+    flex: 1;
+    box-sizing: border-box;
+}
+#ug-display h3 {
+    padding-bottom: 20px;
+}
+#ug-display p {
+    margin: 5px 0;
+}
+#ug-display b {
+    color: rgb(0, 108, 209);
+}
+.ec-display-card h4 {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.ec-display-card p {
+    font-size: 14px;
+    justify-content: center;
+}
+.ec-display-card img {
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+    max-width: 50%;
+    max-height: 50%;
+}
+#ec-carousel {
+    height: 100%;
+    position: relative;
+ }
+.carousel-nav {
+    width: 100%;
+    padding-bottom: 10px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+.carousel-button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(143, 139, 139);
+    display: inline-block;
+    margin: 0 5px;
+    transition: background-color 0.2s ease;
+}
+.ec-carousel-button-selected {
+    background-color: black;
+}
+.ec-carousel-item {
+    height: 90%;
+    padding: 1em;
+    display: none;
+}
+.ec-carousel-item-selected {
+    display: flex;
+}
+.ug-img {
+    max-width: 70%;
+    max-height: 70%;
+    margin: 0px 0 10px 0;
+    border-radius: 5px;
+}
+@media (max-width: 800px) {
+    .academics-container {
+        flex-direction: column;
+    }
+    .cw-container,
+    .ec-container,
+    .ug-container {
+        padding-top: 10px;
+        margin: 20px 20px;
+    }
+    .academics {
+        height: 1100px;
+    }
+    .ec-display-card h1 {
+        font-size: 24px;
+    }
+    .ec-display-card h4 {
+        padding-bottom: 20px;
+        padding-top: 10px;
+        font-size: 14px;
+    }
+    .ec-display-card p {
+        font-size: 12px;
+        justify-content: center;
+    }
+    .ec-display-card {
+        margin: 0 0 20px 0px;
+        width: 100%;  
+        height: 50%;
+    }
+    .ec-carousel-item-selected {
+        flex-direction: column;
+    }
+    .academics {
+        height: 1500px;
+    }
+    .display-container {
+        height: 730px;
+        flex-direction: row;
+    }
+    .carousel-nav {
+        padding-top: 20px;
+    }
+    #ug-display-card {
+        width: 100%;
+        margin: 0 0px 10px 0px;
+    } 
+    .ug-img {
+        max-width: 70%;
+        border-radius: 10px;
+        max-height: 70%;
+    } 
+    .ug-card-container {
+        flex-direction: column;
+        height: 100%;
+    }
 }
 .outline-back {
     position: absolute;
@@ -186,40 +333,4 @@
 .outline-back-cw,
 .outline-back-cross {
     animation: lightPulse 1s infinite; /* Adjust the duration and iteration as needed */
-}
-#ug-display-card {
-    background-color: #ffffffeb;
-    padding: 20px;
-    margin: 10px;
-    display: inline-block;
-    box-shadow: 0 0 5px black;
-    border-radius: 5px;
-    height: 95%;
-    align-items: center;
-    justify-content: center;
-}
-#ec-display-card {
-    background-color: #ffffffeb;
-    padding: 20px;
-    margin: 10px;
-    display: inline-block;
-    box-shadow: 0 0 5px black;
-    border-radius: 5px;
-    /* height: 95%; */
-}
-
-/* Style for the university name */
-#ug-display h3 {
-    color: #333;
-    padding-bottom: 20px;
-}
-
-/* Style for the graduation year and major */
-#ug-display p {
-    margin: 5px 0;
-}
-
-/* Style for labels (bold) */
-#ug-display b {
-    color: rgb(0, 108, 209);
 }

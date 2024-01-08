@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     console.log("DOMContentLoaded event fired");
 
     document.querySelectorAll("#ec-carousel").forEach(carousel => {

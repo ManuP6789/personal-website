@@ -78,7 +78,7 @@
     </div>
     <div class="header">
       <div class="header-video">
-        <video autoplay muted loop id="myVideo">
+        <video autoplay muted loop id="myVideo" playsinline>
           <source
             src="images/The Power of Nature - Timelapse Film.mp4"
             type="video/mp4"
@@ -290,7 +290,7 @@
       <div class="outline-back-cw outline-back"></div>
       <div class="outline-back-cross"></div>
       <div class="display-container hidden">
-        <div id="ug-display" class="display-content">
+        <div id="ug-display" class="display-content hidden">
           <div class="ug-card-container">
             <div id="ug-display-card">
               <h1>Tufts University</h1>
@@ -300,13 +300,12 @@
               <p><b>GPA: </b> 3.82</p>
               <p>Dean's List 3 semesters</p>
             </div>
-            <div id="ug-display-card">
-              <img class="ug-img" src="/images/IMG_9487 (1).png" alt="Error" />
+            <div class="ug-display-card">
               <img class="ug-img" src="/images/tufts.png" alt="Error" />
             </div>
           </div>
         </div>
-        <div id="ec-display" class="display-content hide">
+        <div id="ec-display" class="display-content hide hidden">
           <div id="ec-carousel">
             <div class="ec-carousel-item">
               <div class="ec-display-card">
@@ -356,12 +355,12 @@
                 <img
                   src="/images/mcc-logo.png"
                   alt="Error"
-                  style="border-radius: 70%"
+                  style="border-radius: 80%"
                 />
               </div>
             </div>
             <div class="ec-carousel-item">
-              <div class="ec-display-card" style="width: 50%">
+              <div id="freebites-card" class="ec-display-card">
                 <h1>FreeBites</h1>
                 <h4>Mobile Development Team</h4>
                 <p>
@@ -374,7 +373,17 @@
             </div>
           </div>
         </div>
-        <div id="cw-display" class="display-content hide"></div>
+        <div id="cw-display" class="display-content hide hidden">
+          <div class="cw-display-card">Calculus 1</div>
+          <div class="cw-display-card">Calculus 2</div>
+          <div class="cw-display-card">Calculus 3</div>
+          <div class="cw-display-card">Probability Theory</div>
+          <div class="cw-display-card">Data Structures and Algorithms</div>
+          <div class="cw-display-card">Introduction to Computer Science</div>
+          <div class="cw-display-card">Bridge to Higher Mathematics</div>
+          <div class="cw-display-card">General Physics 1</div>
+          <div class="cw-display-card">EN1: The Craft of Computer Science</div>
+        </div>
       </div>
     </div>
     <div id="contact" class="contact">

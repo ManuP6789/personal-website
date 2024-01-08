@@ -1,5 +1,5 @@
 .academics {
-    height: 800px;
+    height: 900px;
     background: white;
     font-family: 'Spinnaker', sans-serif;
     position: relative;
@@ -7,9 +7,10 @@
     margin-right: auto;
     max-width: 1300px;
 }
+
 .academics-container {
     display: flex;
-    width: 70%; 
+    width: 70%;
     padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -20,8 +21,10 @@
 .ug-container {
     display: flex;
     flex-direction: column;
-    flex: 1; /* Add flex property to make them flexible */
-    margin: 0 20px; /* Optional margin between the containers */
+    flex: 1;
+    /* Add flex property to make them flexible */
+    margin: 0 20px;
+    /* Optional margin between the containers */
     background-color: black;
     height: 100%;
     border-color: black;
@@ -32,14 +35,18 @@
     box-shadow: 10px 10px rgb(0, 145, 255), 12px 12px black;
     transition: box-shadow 0.3s ease-in-out;
 }
+
 .cw-container:hover,
 .ec-container:hover,
 .ug-container:hover {
-    box-shadow: 0px 0px rgb(0, 145, 255), 0px 0px black; /* Adjusted shadow on hover */
+    box-shadow: 0px 0px rgb(0, 145, 255), 0px 0px black;
+    /* Adjusted shadow on hover */
 }
+
 .ug-title-container {
     padding: 1.3em;
 }
+
 .ug-title {
     font-size: 1.3em;
     width: 100%;
@@ -48,14 +55,16 @@
     border-width: 2px;
     border-radius: 2%;
 }
+
 .display-container {
-    height: 530px;
+    height: auto;
     width: 70%;
     padding-top: 75px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
 }
+
 .display-content {
     height: 100%;
     background-color: white;
@@ -65,53 +74,66 @@
     border-style: solid;
     display: flex;
 }
+
 .hide {
     display: none;
 }
+
 .ug-card-container {
-    display: flex; /* Use flexbox to arrange elements side by side */
-    justify-content: space-between; /* Adjust this based on your layout preference */
-    align-items: center; /* Align items vertically in the center */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: auto;
     padding: 1em;
 }
+
 #ug-display-card {
     background-color: #ffffffeb;
     padding: 20px;
     margin: 10px;
     box-shadow: 0 0 5px black;
     border-radius: 5px;
-    width: 100%;
-    /* flex: 1; */
-    height: 100%;
-    box-sizing: border-box;
 }
+
+.ug-img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0px 0 10px 0;
+    border-radius: 5px;
+}
+
 .ec-display-card {
     padding: 20px;
     margin: 10px;
     box-shadow: 0 0 5px black;
     border-radius: 5px;
-    width: 50%; 
+    width: 50%;
     flex: 1;
     box-sizing: border-box;
 }
+
 #ug-display h3 {
     padding-bottom: 20px;
 }
+
 #ug-display p {
     margin: 5px 0;
 }
+
 #ug-display b {
     color: rgb(0, 108, 209);
 }
+
 .ec-display-card h4 {
     padding-bottom: 20px;
     padding-top: 10px;
 }
+
 .ec-display-card p {
     font-size: 14px;
     justify-content: center;
 }
+
 .ec-display-card img {
     display: block;
     margin: auto;
@@ -119,10 +141,12 @@
     max-width: 50%;
     max-height: 50%;
 }
+
 #ec-carousel {
     height: 100%;
     position: relative;
- }
+}
+
 .carousel-nav {
     width: 100%;
     padding-bottom: 10px;
@@ -131,6 +155,7 @@
     left: 0;
     text-align: center;
 }
+
 .carousel-button {
     width: 10px;
     height: 10px;
@@ -140,197 +165,133 @@
     margin: 0 5px;
     transition: background-color 0.2s ease;
 }
+
 .ec-carousel-button-selected {
     background-color: black;
 }
+
 .ec-carousel-item {
     height: 90%;
     padding: 1em;
     display: none;
+    opacity: 0;
 }
+
 .ec-carousel-item-selected {
     display: flex;
+    opacity: 1;
 }
-.ug-img {
-    max-width: 70%;
-    max-height: 70%;
-    margin: 0px 0 10px 0;
+
+#cw-display {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cw-display-card {
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 0 0 5px black;
     border-radius: 5px;
+    height: 100%;
+    width: 30%;
+    font-size: 1.25em;
 }
+
 @media (max-width: 800px) {
     .academics-container {
         flex-direction: column;
     }
+
     .cw-container,
     .ec-container,
     .ug-container {
         padding-top: 10px;
         margin: 20px 20px;
     }
+
     .academics {
         height: 1100px;
     }
+
     .ec-display-card h1 {
         font-size: 24px;
     }
+
     .ec-display-card h4 {
         padding-bottom: 20px;
         padding-top: 10px;
         font-size: 14px;
     }
+
     .ec-display-card p {
         font-size: 12px;
         justify-content: center;
     }
+
     .ec-display-card {
         margin: 0 0 20px 0px;
-        width: 100%;  
+        width: 100%;
         height: 50%;
     }
+
     .ec-carousel-item-selected {
         flex-direction: column;
     }
+
     .academics {
         height: 1500px;
     }
+
     .display-container {
-        height: 730px;
+        height: 900px;
         flex-direction: row;
     }
+
     .carousel-nav {
         padding-top: 20px;
     }
+
     #ug-display-card {
         width: 100%;
         margin: 0 0px 10px 0px;
-    } 
+    }
+
     .ug-img {
-        max-width: 70%;
+        max-width: 100%;
         border-radius: 10px;
-        max-height: 70%;
-    } 
+    }
+
     .ug-card-container {
         flex-direction: column;
-        height: 100%;
-    }
-}
-.outline-back {
-    position: absolute;
-    background-color: black;
-    margin: auto;
-    top: 28.75%;
-    z-index: -2;
-    height: 51px;
-    width: 2px;
-    align-items: center;
-}
-.outline-back-ec {
-    right: 50%;
-    height: 75px;
-}
-.outline-back-ug {
-    right: 25%;
-}
-.outline-back-cw {
-    right: 75%;
-}
-.outline-back-cross {
-    position: absolute;
-    display: flex;
-    background: black;
-    margin: -2;
-    right: 25%;
-    top: 35%;
-    z-index: -2;
-    height: 5px;
-    width: 50.3%;
-    border-radius: 5%;
-}
-.outline-back-cross::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-    background: linear-gradient(to bottom, #00ccff, #0066ff);
-    transform-origin: left;
-    /* animation: lightsaberGlow 2s infinite; */
-}
-.outline-back-cross::after {
-    content: '';
-    position: absolute;
-    z-index: -2;
-    top: 50%;
-    transform: translateY(-50%) scale(0);
-    width: 20px;
-    height: 20px;
-    background: rgb(7, 220, 220); /* Adjust the alpha value for the glow intensity */
-    border-radius: 50%;
-    /* animation: animateDot 2s linear infinite; */
-}
-
-@keyframes lightsaberGlow {
-    0%, 20% {
-        transform: scaleX(0);
-        box-shadow: 0 0 0 4px #00ccff84,
-        0 0 0 5px #00ccff98,
-        0 0 10px #00ccff,
-        0 0 20px 10px #00ccff;
-    }
-    100% {
-        transform: scaleX(1);
-        transform-origin: left;
-        box-shadow: 0 0 0 4px #00ccff84,
-        0 0 0 5px #00ccff98,
-        0 0 10px #00ccff,
-        0 0 20px 10px #00ccff;
-    }
-}
-
-@keyframes animateDot {
-    0%
-    {
-        transform: translateY(-50%) scale(0) translateX(0);
-    }
-    5%
-    {
-        transform: translateY(-50%) scale(1);
-    }
-    20% 
-    {
-        transform: translateY(-50%) scale(1);
-        box-shadow: 0 0 0 4px #0bec7c22,
-        0 0 0 10px #0bec7c22,
-        0 0 20px #0bec7c,
-        0 0 60px 10px #0bec7c;
-    }
-    40%
-    {
-        transform: translateY(-50%) scale(1);
-    }
-    80%
-    {
-        transform: translateY(-50%) scale(1);
-        box-shadow: 0 0 0 4px #0bec7c22,
-        0 0 0 10px #0bec7c22,
-        0 0 20px #0bec7c,
-        0 0 60px 10px #0bec7c,
-        0 0 100px 20px #0bec7c;
-    }
-    95%
-    {
-        transform: translateY(-50%) scale(1);
-    }
-    100%
-    {
-        transform: translateY(-50%) scale(1) translateX(100%);
     }
 
-}
-.outline-back,
-.outline-back-ec,
-.outline-back-ug,
-.outline-back-cw,
-.outline-back-cross {
-    animation: lightPulse 1s infinite; /* Adjust the duration and iteration as needed */
+    #cw-display {
+        flex-wrap: wrap;
+        /* justify-content: space-around; */
+    }
+
+    .cw-display-card {
+        padding: 3px;
+        margin: auto;
+        height: 8%;
+        width: 60%;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #ug-display {
+        height: fit-content;
+    }
+
+    .ug-img {
+        margin-top: 50px;
+    }
+
+    #ug-display-card {
+        margin: 20px;
+    }
+
+    #freebites-card {
+        width: 100%;
+    }
 }

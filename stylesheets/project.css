@@ -6,6 +6,7 @@
     max-width: 1300px;
     background-color: white;
 }
+
 .projects-grid {
     display: grid;
     grid-template-columns: 0.8fr 1fr;
@@ -15,20 +16,24 @@
     max-width: 1000px;
     height: 100%;
     padding: 5rem 5rem 5rem 5rem;
-    margin-left: auto; /* Center horizontally */
+    margin-left: auto;
+    /* Center horizontally */
     margin-right: auto;
 }
+
 .grid-image {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
+
 .grid-image:hover .hovered {
     transform: translate(10%, -5%);
-    width: 100%; 
+    width: 100%;
     height: 100%;
 }
+
 .project-image {
     object-fit: cover;
     border: 2px solid black;
@@ -36,6 +41,7 @@
     height: 350px;
     width: 350px;
 }
+
 .overlay {
     content: "";
     position: absolute;
@@ -52,15 +58,18 @@
     transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease;
     transform: translate(0, 0);
 }
+
 .grid-description {
     display: flex;
     flex-direction: column;
     padding-left: 25px;
     padding-right: 25px;
 }
+
 .project-title {
     font-size: 30px;
 }
+
 .tech-list {
     display: flex;
     padding-top: 5px;
@@ -68,25 +77,29 @@
     flex-wrap: wrap;
     list-style-type: none;
     border-radius: 2%;
-    border-bottom-style: solid; 
+    border-bottom-style: solid;
     border-color: black;
     border-width: 2px;
 }
+
 .tech-text {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
 }
+
 .project-description-text {
     padding-top: 30px;
 }
+
 .tech-list-element {
     padding-left: 10px;
 }
+
 .tech-list img {
-    max-width: 36px; /* Adjust the size as needed */
-    max-height: 36px; /* Adjust the size as needed */
+    max-width: 36px;
+    max-height: 36px;
 }
 
 @media (max-width: 750px) {
@@ -94,53 +107,87 @@
         padding-top: 30px;
         display: block;
     }
+
     .grid-image {
         padding-bottom: 30px;
         padding-top: 30px;
     }
+
     .project-image {
         height: 350px;
         width: 350px;
     }
+
     .grid-description {
         padding-bottom: 40px;
     }
+
     .projects-header-container {
         text-align: center;
     }
+
     .projects-header-text {
         font-size: 40px;
     }
+
     .grid-image:hover .hovered {
-        transform: translate(-20%, 5%);
-        width: 40%; 
-        height: 80%;
+        width: 0;
+        height: 0;
+        border-width: 0px;
     }
+
     .overlay {
-        width: 70%;
-        height: 70%;
+        width: 0;
+        height: 0;
+        border-width: 0px;
+        border-color: white;
+    }
+
+    #freebites-description,
+    #face-design-description {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    #freebites-description,
+    #face-design-description {
+        font-size: 10px;
     }
 }
+
 @media (max-width: 890px) {
     .tech-list img {
-        max-width: 24px; /* Adjust the size as needed */
-        max-height: 24px; /* Adjust the size as needed */
+        max-width: 24px;
+        max-height: 24px;
     }
+
     .project-image {
         height: 300px;
         width: 300px;
     }
+
     .project-title {
         font-size: 25px;
     }
+
     .tech-text {
         font-size: 20px;
     }
+
     .project-description-text {
         font-size: 15px;
     }
+
     .grid-image::after {
         height: 100%;
         width: 100%;
+    }
+
+    #freebites-description,
+    #face-design-description {
+        font-size: 12px;
     }
 }

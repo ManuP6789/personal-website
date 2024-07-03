@@ -1,153 +1,232 @@
-*, *,::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}  
+*,
+*,
+::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .fsnav {
-    text-size-adjust: auto;
-    overflow: hidden;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    min-height: auto;
-    min-width: auto;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.95);
-    transform: translateY(-100%);
-    transition: transform 0.5s; 
+  text-size-adjust: auto;
+  overflow: hidden;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  min-height: auto;
+  min-width: auto;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  transform: translateY(-100%);
+  transition: transform 0.5s;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .fsnav--open {
-    transform: translateY(0%);
-    transition: transform 0.5s;
-} 
+  transform: translateY(0%);
+  transition: transform 0.5s;
+}
 .fsnav-top-bar {
-    height: 6.5rem;
-    display: flex;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(222, 222, 222);
-    -webkit-user-select: none; 
-    -ms-user-select: none;
-    user-select: none; 
+  height: 6.5rem;
+  display: flex;
+  background-color: black;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(222, 222, 222);
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .fsnav-top-bar-left-section {
-    display: flex;
-    padding-left: 40px;
-    align-items: center;
+  display: flex;
+  padding-left: 40px;
+  align-items: center;
 }
-.fsnav-name-logo{
-    font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
+.fsnav-name-logo {
+  font-family: "Montserrat Subrayada", sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
 }
 .fsnav-top-bar-right-section {
-    display: flex;
-    flex-basis: 0%;
-    flex-grow: 1;
-    flex-shrink: 1;
-    justify-content: flex-end;
-    line-height: 90px;
-    padding-left: 20px;
-    align-self: stretch;
-    box-sizing: border-box;
+  display: flex;
+  flex-basis: 0%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: flex-end;
+  line-height: 90px;
+  padding-left: 20px;
+  align-self: stretch;
+  box-sizing: border-box;
 }
 .fsnav-close-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 30px;
-    color: white;
-    font-family: 'Spinnaker', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+  color: white;
+  font-family: "Spinnaker", sans-serif;
 }
-.fsnav-close{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 30px;
+.fsnav-close {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 30px;
 }
 .fsnav-close-button {
-    font-size: 20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 100;
-    width: 1.75em;
-    height: 1.75em;
-    outline: none;
-    background: none;
-    border: solid;
-    border-color: rgba(255,255,255,0.35);
-    border-radius: 50%;
-    color: white;
-    user-select: none;
-    cursor: pointer;
-    transition: all 0.5s;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 100;
+  width: 1.75em;
+  height: 1.75em;
+  outline: none;
+  background: none;
+  border: solid;
+  border-color: rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  color: white;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 .fsnav-close-button:active,
 .fsnav-close-button:hover {
-    border-color: white;
-    -webkit-tap-highlight-color: transparent;
+  border-color: white;
+  -webkit-tap-highlight-color: transparent;
 }
 .fsnav-directory {
-    z-index: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  z-index: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 79.2%;
+  overflow: hidden;
 }
 .fsnav-directory-left {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    width: 20rem;
-    padding: 4rem 3rem 3rem 3rem;
-    float: left;
-    overflow-y: scroll;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  width: 20%;
+  padding: 4rem 3rem 3rem 3rem;
+  float: left;
+  overflow-y: scroll;
 }
 .fsnav-directory-left-grid {
-    display: block;
-    flex-basis: 15%;
-    flex-shrink: 0;
-    padding-bottom: 3rem;
+  display: block;
+  width: 100%;
+  flex-basis: 15%;
+  flex-shrink: 0;
+  padding-bottom: 3rem;
 }
 .fsnav-link::before {
-    content: "";
-    position: absolute;
-    left: 0; 
-    bottom: 0; 
-    width: 0;
-    height: 2px;
-    background-color: white;
-    transition: width 0.25s ease-out;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.25s ease-out;
 }
 .fsnav-link:hover::before {
-    width: 100%;
+  width: 100%;
 }
 .fsnav-link {
-    display: inline-block;
-    position: relative;
-    text-decoration-line: none;
-    color: white;
-    font-family: 'Spinnaker', sans-serif;
-    font-size: 35px;
-    padding: 0;
+  display: inline-block;
+  position: relative;
+  text-decoration-line: none;
+  color: white;
+  font-family: "Spinnaker", sans-serif;
+  font-size: 35px;
+  padding: 0;
 }
 .fsnav-directory-right {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 70%;
+  position: relative;
+}
+.more-content-container {
+  background-color: lightblue;
+  height: 100%;
+  width: 100%;
 }
 .fsnav-lower-menu {
-    color: white;
-    background-color: black;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 6.5rem;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: rgb(222, 222, 222);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(222, 222, 222);
+}
+.fsnav-lower-menu-text {
+  margin-right: 20px;
+}
+.fsnav-lower-menu-links a {
+  color: white;
+  padding-right: 1em;
+  text-decoration: none;
+}
+.fsnav-background {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.fsnav-background-img.visible {
+  opacity: 1; /* Fully visible */
+  z-index: 0;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.fsnav-background-img {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease, filter 0.5s ease, display 0.5s ease; /* Transition for opacity and filter */
+  z-index: -1;
+  object-fit: cover;
+  filter: brightness(20%);
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.fsnav-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Ensure the pseudo-element does not interfere with mouse events */
+
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      transparent 10%,
+      transparent 95%,
+      rgba(0, 0, 0, 1)
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1),
+      transparent 0%,
+      transparent 100%,
+      rgba(0, 0, 0, 1)
+    );
+  z-index: 100;
 }

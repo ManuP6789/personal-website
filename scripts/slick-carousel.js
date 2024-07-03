@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("DOMContentLoaded event fired");
-
   document.querySelectorAll("#ec-carousel").forEach((carousel) => {
-    console.log("DOMContentLoaded event fired");
     const items = carousel.querySelectorAll(".ec-carousel-item");
     const buttonsHtml = Array.from(items, () => {
       return '<span class="carousel-button"></span>';
@@ -37,6 +34,5 @@ document.addEventListener("DOMContentLoaded", function () {
     // Select the first item on page load
     items[0].classList.add("ec-carousel-item-selected");
     buttons[0].classList.add("ec-carousel-button-selected");
-    console.log(buttonsHtml);
   });
 });
